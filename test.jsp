@@ -8,7 +8,12 @@
 </head>
     <script src="test.json" id="test"></script>
     <script>
-
+        var today = new Date();
+        var year = today.getFullYear(); // 년도
+        var month = today.getMonth()+1;  // 월
+        var date = today.getDate();  // 날짜
+        alert(year+'.'+month+'.'+date);
+        
     </script>
 <body>
     <div>
@@ -19,10 +24,10 @@
         <select id="selecter">
             <option value="100">100</option>
             <option value="200">200</option>
-            <option value="300">300</option>    
+            <option value="300">300</option>   
         </select>
         <br><br><br>
-        <input id="txt_host4" type="email" value="this.value"><br><br><br><!-- �??�� ,?��메일, ?��?��?��, ?��?��번호, url??? 같�?? ?��?��-->
+        <input id="txt_host4" type="email" value="this.value"><br><br><br>
         <input id="txt_host5" type="time" value="this.value"><br><br><br>
         <input id="txt_host6" type="datetime-local" value="this.value"><br><br><br>
         <input id="txt_host7" type="range" value="this.value"><br><br><br>
